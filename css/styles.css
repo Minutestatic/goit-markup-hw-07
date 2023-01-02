@@ -239,12 +239,10 @@ address {
 /* Main content */
 /* Hero */
 .hero {
-  background-color: var(--hero-background-color);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-}
-.hero-img {
+  background-color: var(--hero-background-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-img.jpg);
   max-width: 1600px;
@@ -254,7 +252,8 @@ address {
   background-repeat: no-repeat;
   background-position: center;
 }
-.hero-title {
+
+.hero__title {
   color: var(--withe-text-color);
 
   font-weight: 900;
@@ -270,7 +269,7 @@ address {
   margin-bottom: 30px;
 }
 
-/* Features Flexbox */
+/* Features  */
 .features {
   display: flex;
   gap: 30px;
@@ -279,8 +278,7 @@ address {
   flex-basis: 270px;
 }
 
-/* Features */
-.features-icon-card {
+.features__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -291,7 +289,7 @@ address {
   margin-bottom: 30px;
 }
 
-.features-title {
+.features__title {
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.14;
@@ -301,7 +299,7 @@ address {
   margin-bottom: 10px;
 }
 
-.features-paragraph {
+.features__paragraph {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
