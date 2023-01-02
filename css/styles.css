@@ -75,10 +75,7 @@ address {
   font-style: normal;
 }
 
-.line {
-  border-bottom: 1px solid #ececec;
-}
-
+/* Скривает заголовки */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -113,37 +110,9 @@ address {
   margin: 0 auto;
 }
 
-/* Header Flexbox */
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header-nav {
-  display: flex;
-  justify-content: space-between;
-}
-.site-nav {
-  display: flex;
-  align-items: center;
-}
-.site-nav-item {
-  position: relative;
-}
-.site-nav-item + .site-nav-item {
-  margin-left: 40px;
-}
-
-.contact-list {
-  display: flex;
-  align-items: center;
-}
-.contact-item + .contact-item {
-  margin-left: 40px;
-}
-
+/* -------------Header----------------- */
 /* Site logo */
-.header-logo {
+.logo {
   display: flex;
   align-self: center;
   padding-top: 24px;
@@ -158,11 +127,36 @@ address {
   margin-right: 93px;
 }
 
-.txt-logo {
+.logo__txt {
   color: var(--acent-text-color);
 }
 
-.site-nav-link {
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+}
+.header__item {
+  position: relative;
+  margin-right: 40px;
+}
+.header__item:last-child {
+  margin-right: 0;
+}
+
+.header__link {
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -180,15 +174,15 @@ address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus {
+.header__link:hover,
+.header__link:focus {
   color: var(--acent-text-color);
 }
-.current {
+.header__link--current {
   color: var(--acent-text-color);
 }
 
-.current::after {
+.header__link--current::after {
   content: '';
 
   position: absolute;
@@ -201,7 +195,18 @@ address {
   background-color: var(--acent-text-color);
 }
 
-.contact-link {
+.contact-list {
+  display: flex;
+  align-items: center;
+}
+.contact-list__item {
+  margin-right: 40px;
+}
+.contact-list__item:last-child {
+  margin-right: 0;
+}
+
+.contact-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,14 +227,15 @@ address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contact-list__link:hover,
+.contact-list__link:focus {
   color: var(--acent-text-color);
   fill: currentColor;
 }
-.contact-icon {
+.contact-list__icon {
   margin-right: 10px;
 }
+
 /* Main content */
 /* Hero */
 .hero {
