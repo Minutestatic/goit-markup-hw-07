@@ -305,20 +305,20 @@ address {
   letter-spacing: 0.03em;
 }
 
-/* Work-list Flexbox */
-.work-container {
+/* Work-list  */
+.section-work {
   padding-top: 0;
 }
 
-.work-list {
+.work {
   display: flex;
   justify-content: space-between;
 }
 
-.work-item {
+.work__item {
   position: relative;
 }
-.work-title {
+.work__title {
   width: 100%;
   color: var(--withe-text-color);
   background-color: rgba(47, 48, 58, 0.8);
