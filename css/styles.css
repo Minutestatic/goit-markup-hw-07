@@ -408,18 +408,18 @@ address {
 }
 
 /* Clientage */
-.clientage-list {
+.clientage {
   display: flex;
   gap: 30px;
   align-items: center;
   justify-content: center;
 }
-.clientage-item {
+.clientage__item {
   width: 170px;
   height: 92px;
 }
 
-.clientage-link {
+.clientage__link {
   border: 1px solid var(--link-icon-color);
   display: flex;
   align-items: center;
@@ -434,8 +434,8 @@ address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clientage-link:hover,
-.clientage-link:focus {
+.clientage__link:hover,
+.clientage__link:focus {
   fill: var(--acent-text-color);
   border-color: var(--acent-text-color);
 }
