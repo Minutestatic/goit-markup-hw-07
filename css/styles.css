@@ -127,6 +127,13 @@ address {
   margin-right: 93px;
 }
 
+.logo-footer {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 28px;
+  margin-right: 0;
+}
+
 .logo__text {
   color: var(--black-text-color);
 }
@@ -413,17 +420,6 @@ address {
 
 /* Footer */
 /* Footer Address  */
-.logo-footer {
-  color: var(--withe-text-color);
-  font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-
-  display: inline-block;
-  margin-bottom: 28px;
-}
 
 .footer {
   background-color: var(--footer-color);
