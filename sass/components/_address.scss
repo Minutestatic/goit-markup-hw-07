@@ -1,0 +1,33 @@
+.address {
+    margin-right: 70px;
+}
+
+.address__item {
+    margin-top: 12px;
+}
+
+.address__item:first-child {
+    margin-top: 0;
+}
+
+.address__link {
+    color: var(--link-footer-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address__link:hover,
+.address__link:focus {
+    color: var(--acent-text-color);
+}
+
+.address__link--map {
+    color: var(--withe-text-color);
+}
