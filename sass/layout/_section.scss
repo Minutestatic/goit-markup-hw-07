@@ -2,9 +2,11 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
+.section--secondary-color {
+    background-color: $secondaryPageColor;
+}
 .section-title {
-    color: var(--title-text-color);
+    color: $titleTextColor;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;

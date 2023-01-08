@@ -1,68 +1,69 @@
 .header {
   border-bottom: 1px solid #ececec;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+    margin-right: 40px;
+      
+    &:last-child {
+        margin-right: 0;
+      }
+  }
+
+  &__link {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $titleTextColor;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+      &:hover,
+      &:focus {
+        color: $acentTextColor;
+      }
+    
+      &--current {
+        color: $acentTextColor;
+      }
+    
+      &--current::after {
+        content: '';
+    
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+    
+        background-color: $acentTextColor;
+      }
+  }
 }
 
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header__nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header__list {
-  display: flex;
-  align-items: center;
-}
-
-.header__item {
-  position: relative;
-  margin-right: 40px;
-}
-
-.header__item:last-child {
-  margin-right: 0;
-}
-
-.header__link {
-  position: relative;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: var(--title-text-color);
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header__link:hover,
-.header__link:focus {
-  color: var(--acent-text-color);
-}
-
-.header__link--current {
-  color: var(--acent-text-color);
-}
-
-.header__link--current::after {
-  content: '';
-
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-
-  background-color: var(--acent-text-color);
-}

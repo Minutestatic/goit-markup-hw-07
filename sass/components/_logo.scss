@@ -5,13 +5,17 @@
     padding-top: 24px;
     padding-bottom: 25px;
 
-    color: var(--acent-text-color);
+    color: $acentTextColor;
     font-family: Raleway, sans-serif;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
     letter-spacing: 0.03em;
     margin-right: 93px;
+
+    &__text {
+        color: $blackTextColor;
+    }
 }
 
 .logo-footer {
@@ -19,12 +23,11 @@
     padding-bottom: 0;
     margin-bottom: 28px;
     margin-right: 0;
+    
+    &__text {
+        color: $witheTextColor;
+    }
 }
 
-.logo__text {
-    color: var(--black-text-color);
-}
 
-.logo-footer__text {
-    color: var(--withe-text-color);
-}
+
