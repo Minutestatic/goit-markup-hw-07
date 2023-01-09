@@ -43,11 +43,13 @@
 
     color: $witheTextColor;
     background-color: rgba(33, 150, 243, 0.9);
+
+    .project__link:hover &, 
+    .project__link:focus & {
+      transform: translatey(0); 
+    }  
   }
 
-  &__item:hover &__overlay {
-    transform: translateY(0);
-  }
 
   &__container {
     border-left: 1px solid #eeeeee;

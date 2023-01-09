@@ -10,7 +10,7 @@ html {
 
 body {
     margin: 0;
-    border-color: var(--main-page-color);
-    color: var(--primary-text-color);
+    background-color: $mainPageColor;
+    color: $primaryTextColor;
     font-family: Roboto, sans-serif;
 }

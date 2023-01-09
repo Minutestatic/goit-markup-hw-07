@@ -166,7 +166,7 @@
 
     
 
-    .checkbox__label {
+    &__label {
         position: relative;
         padding-left: 34px;
         font-size: 14px;
@@ -174,10 +174,10 @@
         letter-spacing: 0.03em;
         color: $primaryTextColor;
         cursor: pointer;
+    }
 
         &__link {
             color: $acentTextColor;
         }
-    }
 }
 

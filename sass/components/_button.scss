@@ -6,7 +6,7 @@
     border: 0;
 }
 
-.primary-button {
+.hero__button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -34,7 +34,7 @@
 
 
 
-.subscription-button {
+.subscription__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,7 +85,7 @@
 
 
 
-.modal-form-button {
+.modal-form__button {
     display: flex;
     margin: 0 auto;
     font-weight: 700;
@@ -115,7 +115,7 @@
 
 
 
-.content-button {
+.filter-list__button {
     color: $titleTextColor;
     background-color: $secondaryPageColor;
     font-weight: 500;
